@@ -1,0 +1,70 @@
+<script>
+    console.log("Hello world");
+
+
+    var a = "7";
+    a += 7;
+    console.log(a);
+
+
+    var myname = "Beau"
+    var mystring = "my name is " + myname + " I am well"
+    console.log(mystring);
+
+
+  function wordsblanks(mynoun, myadjective, myverb, myadverb){
+  var result ="";
+  result = "the " + myadjective + " " + mynoun + " "+ myverb + " " + myadverb + " " ;
+  return result;
+  }
+  console.log(wordsblanks("dog", "big", "ran", "quickly"))
+  
+  
+
+  var array=[["john", 23], ["ada", 22]];
+  var data =array[0]
+console.log(data);
+var mydata = array[1][0]
+console.log(mydata)
+
+
+var myglobal="10";
+function equal(val) {
+    
+    
+    if(val ===10){
+        return "equal"
+    }
+    return "not equal"
+}
+console.log(equal(50));
+ 
+ function trueorfalse(val){
+    if(val==10){
+        return "it's true"
+    }
+    return "it's false"
+ }
+ console.log(trueorfalse("10"));
+
+
+ function comparate(val){
+    if(val > 10){
+        return "it's true"
+    }
+    return "it's false"
+ }
+ console.log(comparate("5"))
+
+
+
+
+ function logicalcomparate(val){
+    if(val > 10){
+        return "10 or more"
+    }else {
+return "10 or under"
+    }
+ }
+ console.log(logicalcomparate("5"))
+</script>
