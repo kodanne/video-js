@@ -12,496 +12,521 @@
     console.log(mystring);
 
 
-  function wordsblanks(mynoun, myadjective, myverb, myadverb){
-  var result ="";
-  result = "the " + myadjective + " " + mynoun + " "+ myverb + " " + myadverb + " " ;
-  return result;
-  }
-  console.log(wordsblanks("dog", "big", "ran", "quickly"))
-  
-  
-
-  var array=[["john", 23], ["ada", 22]];
-  var data =array[0]
-console.log(data);
-var mydata = array[1][0]
-console.log(mydata)
-
-
-var myglobal="10";
-function equal(val) {
-    
-    
-    if(val ===10){
-        return "equal"
+    function wordsblanks(mynoun, myadjective, myverb, myadverb) {
+        var result = "";
+        result = "the " + myadjective + " " + mynoun + " " + myverb + " " + myadverb + " ";
+        return result;
     }
-    return "not equal"
-}
-console.log(equal(50));
- 
- function trueorfalse(val){
-    if(val==10){
-        return "it's true"
+    console.log(wordsblanks("dog", "big", "ran", "quickly"))
+
+
+
+    var array = [["john", 23], ["ada", 22]];
+    var data = array[0]
+    console.log(data);
+    var mydata = array[1][0]
+    console.log(mydata)
+
+
+    var myglobal = "10";
+    function equal(val) {
+
+
+        if (val === 10) {
+            return "equal"
+        }
+        return "not equal"
     }
-    return "it's false"
- }
- console.log(trueorfalse("10"));
+    console.log(equal(50));
 
-
- function comparate(val){
-    if(val > 10){
-        return "it's true"
+    function trueorfalse(val) {
+        if (val == 10) {
+            return "it's true"
+        }
+        return "it's false"
     }
-    return "it's false"
- }
- console.log(comparate("5"))
+    console.log(trueorfalse("10"));
 
 
-
-
- function logicalcomparate(val){
-    if(val > 10){
-        return "10 or more"
-    }else {
-return "10 or under"
+    function comparate(val) {
+        if (val > 10) {
+            return "it's true"
+        }
+        return "it's false"
     }
- }
- console.log(logicalcomparate("5"));
+    console.log(comparate("5"))
 
-//
 
- function golfStrokes(par, strokes){
-    
-    if(strokes <= par-1){;                               
-        return "alpha"
-    } else if(strokes = par+2){
-        return "beta"
-    } else if(strokes > par * 2){
-        return "gamma"
-    } else if(strokes < par / 5){
-        return "delta"
-    } else if(strokes => par){
-        return "omega"
+
+
+    function logicalcomparate(val) {
+        if (val > 10) {
+            return "10 or more"
+        } else {
+            return "10 or under"
+        }
     }
+    console.log(logicalcomparate("5"));
 
- }
- console.log(golfStrokes(5,10));
-  
+    //
 
+    function golfStrokes(par, strokes) {
 
- function caseInSwitch(val){
-    var answer=""
-    switch (val){
-        case "a":
-        answer="apple"
-        break;
-        case "b":
-        answer="bird"
-        break;
-        case "c":
-        answer="cat"
-        break;
-        default:
-        answer="stuf"
-        break;
-        
+        if (strokes <= par - 1) {
+            ;
+            return "alpha"
+        } else if (strokes = par + 2) {
+            return "beta"
+        } else if (strokes > par * 2) {
+            return "gamma"
+        } else if (strokes < par / 5) {
+            return "delta"
+        } else if (strokes => par) {
+            return "omega"
+        }
 
     }
-    return answer
- }
- console.log(caseInSwitch("b"));
+    console.log(golfStrokes(5, 10));
 
 
-//
+
+    function caseInSwitch(val) {
+        var answer = ""
+        switch (val) {
+            case "a":
+                answer = "apple"
+                break;
+            case "b":
+                answer = "bird"
+                break;
+            case "c":
+                answer = "cat"
+                break;
+            default:
+                answer = "stuf"
+                break;
 
 
- function abTest(a,b){
-    if (a <0 || b <0){
-        return undefined
+        }
+        return answer
     }
-    return Math.round(Math.pow(Math.sqrt(a) + Math.sqrt(b), 2));
- }
- console.log(abTest(2,2));
- //
+    console.log(caseInSwitch("b"));
 
- var count= 0;
 
- function cc(card){
-    switch(card){
-        case 1 :
-        case 2 :
-        case 3 :
-        case 4 :
-        case 5 :
-        case 6 :
-        count++;
-        break;
-        case 10 :
-        case "J" :
-        case "Q" :
-        case "K" :
-        case "A" :
-        count--;
-        break;
+    //
+
+
+    function abTest(a, b) {
+        if (a < 0 || b < 0) {
+            return undefined
+        }
+        return Math.round(Math.pow(Math.sqrt(a) + Math.sqrt(b), 2));
     }
+    console.log(abTest(2, 2));
+    //
 
-var holdbet ="Hold"
-if (count > 0){
-    holdbet ="Bet";
-}
+    var count = 0;
+
+    function cc(card) {
+        switch (card) {
+            case 1:
+            case 2:
+            case 3:
+            case 4:
+            case 5:
+            case 6:
+                count++;
+                break;
+            case 10:
+            case "J":
+            case "Q":
+            case "K":
+            case "A":
+                count--;
+                break;
+        }
+
+        var holdbet = "Hold"
+        if (count > 0) {
+            holdbet = "Bet";
+        }
 
 
-    return count + " " + holdbet;
- }
- console.log(cc(10));
-
- var mycat ={
-    "name" : "kitty",
-    "friends" : ["everythings"],
-    "a food" : "fish"
-
- };
- mycat.bark ="meow";
- delete mycat.friends;
- mycat['a food'] = "mouse"
-
- console.log(mycat.bark);
-
-
-
-var myObj ={
-    gift : "pony",
-    pet: "kitten",
-    bed: "sleigh"
-};
-function checkObj(checkProp) {
-    if (myObj.hasOwnProperty(checkProp)){
-        return myObj[checkProp];
-    }else{
-        return "not found"
+        return count + " " + holdbet;
     }
+    console.log(cc(10));
 
-}
-console.log(checkObj("gift"));
-console.log(checkObj("hell"));
+    var mycat = {
+        "name": "kitty",
+        "friends": ["everythings"],
+        "a food": "fish"
+
+    };
+    mycat.bark = "meow";
+    delete mycat.friends;
+    mycat['a food'] = "mouse"
+
+    console.log(mycat.bark);
 
 
 
-var myStorage = {
-    "car":{
-        "inside": {
-            "glove box": "maps",
-            "passenger seat": "crumbs"
+    var myObj = {
+        gift: "pony",
+        pet: "kitten",
+        bed: "sleigh"
+    };
+    function checkObj(checkProp) {
+        if (myObj.hasOwnProperty(checkProp)) {
+            return myObj[checkProp];
+        } else {
+            return "not found"
+        }
+
+    }
+    console.log(checkObj("gift"));
+    console.log(checkObj("hell"));
+
+
+
+    var myStorage = {
+        "car": {
+            "inside": {
+                "glove box": "maps",
+                "passenger seat": "crumbs"
+            },
+            "outside": {
+                "trunk": "jack"
+            }
+        }
+    };
+    var gloveBoxContents = myStorage.car.inside["passenger seat"];
+    console.log(gloveBoxContents);
+
+    var collection = {
+        "2548": {
+            "album": "slipperry when wet",
+            "artist": "Bon jovi",
+            "tracks": [
+                "let it rocks",
+                "you give love a bad name"
+            ]
         },
-        "outside": {
-            "trunk": "jack"
+        "2468": {
+            "album": "1999",
+            "artist": "prince",
+            "tracks": [
+                "1999",
+                "you give love a bad name"
+            ]
+        },
+        "1245": {
+            "artist": "prince",
+            "tracks": []
+        },
+        "5439": {
+            "album": "ABBA Gold",
+
         }
+
     }
-};
-var gloveBoxContents = myStorage.car.inside["passenger seat"];
-console.log(gloveBoxContents);
-
-var collection = {
-    "2548": {
-        "album": "slipperry when wet",
-    "artist": "bon jovi",
-    "tracks": [ 
-        "let it rocks",
-        "you give love a bad name"
-    ]
-    }, 
-    "2568": {
-        "album": "1999",
-    "artist": "prince",
-    "tracks": [ 
-        "1999",
-        "you give love a bad name"
-    ]
+    function updateRecords( id, prop, value) {
+  if(value === ""){
+    delete colection[id][prop]
+  }else if(prop !== "tracks"){
+    collection[id][prop] = collection[id][prop] || []
+      
+    collection[id][prop].push(value)
+    }else{
+        collection[id][prop] = (value)
     }
-
+    
+  
+  return collection;
 }
 
+updateRecords( 5439, 'artist', 'ABBA');
 
 
 
-var myArray = [];
- var i = 0;
-do {
-    myArray.push(i);
-    i++;
- } while(i < 8)
- console.log(myArray);
+    var myArray = [];
+    var i = 0;
+    do {
+        myArray.push(i);
+        i++;
+    } while (i < 8)
+    console.log(myArray);
 
 
-var myarray =[];
-for (i = 1; i < 10; i++){
-    myarray.push(i)
-}
-console.log(myarray);
+    var myarray = [];
+    for (i = 1; i < 10; i++) {
+        myarray.push(i)
+    }
+    console.log(myarray);
 
 
-var arr =[9, 10, 11, 12];
-var ourTotal =0
-for (var i = 2; i < arr.length; i++){
-    ourTotal += arr[i]
-}
-console.log(ourTotal);
+    var arr = [9, 10, 11, 12];
+    var ourTotal = 0
+    for (var i = 2; i < arr.length; i++) {
+        ourTotal += arr[i]
+    }
+    console.log(ourTotal);
 
 
-function multiplyAll(arr) {
-    var product = 1;
+    function multiplyAll(arr) {
+        var product = 1;
 
-    for(var i=0; i < arr.length; i++){
-        for (var j=0; j <arr[i].length; j++){
-            product *= arr[i][j]
+        for (var i = 0; i < arr.length; i++) {
+            for (var j = 0; j < arr[i].length; j++) {
+                product *= arr[i][j]
+            }
         }
+        return product;
     }
-    return product;
-}
- 
- var product = multiplyAll([[1,2],[3,4],[5,6,7]]);
 
- console.log(product);
+    var product = multiplyAll([[1, 2], [3, 4], [5, 6, 7]]);
 
-function randomFraction() {
-    return Math.random();
-}
-console.log(randomFraction());
+    console.log(product);
 
-var randomNumberBetween0and19 = Math.floor(Math.random() * 20);
-
-function randomWholeNum () {
-
-    return Math.floor(Math.random() * 10)
-
-}
-console.log(randomWholeNum());
-
-
-function myRandomrange(myMin, myMax){
-
-    return Math.floor(Math.random() * (myMax - myMin +1)) + myMin;
-
-}
-console.log(myRandomrange(5, 20))
-
-
-function convertToInteger(str) {
- 
-    return parseInt(str, 2);
-
-}
-console.log(convertToInteger("10011"));
-
-
-
-function checkequal(num){
-    return num > 0 ? "positive" : num < 0 ? "negative" : "zero";
-
-
-}
-console.log(checkequal(10));
-
-
-
-function checkScope(){
-"use strict";
-let i =" function scope";
-if (true){
-    let i = "block scope";
-    console.log("Block scope i is:", i);
-
-}
-console.log("Funtion scope i is:", i);
-return i
-}
-checkScope();
-
-
-
-
-const s = [5, 7, 2]
-function editInPlace() {
-    "use strcit";
-
-    s[0] = 2;
-    s[1] = 5;
-    s[2] = 7;
-
-}
-editInPlace();
-console.log(s);
-
-
-
-
-function freezeObj(){
-"use strict";
-const MATH_CONSTANTS = {
-    PI:3.14
-};
-try{
-    MATH_CONSTANTS.PI = 99;
-}catch(ex){
-    console.log(ex);
-}
-return MATH_CONSTANTS.PI;
-}
-const PI = freezeObj();
-console.log(PI)
-
-
-var myConcat = (arr1, arr2) => arr1.concat(arr2);
-
-console.log(myConcat([1, 2], [3, 4, 5]));
-
-
-
-
-const realNumberArray = [4, 5.6, -9.8, 3.14, 42, 6, 8.34, -2]
-
-const squareList = (arr) => {
-     const squaredIntegers = arr.filter(num => Number.isInteger(num) && num > 0).map(x => x * x);
-     return squaredIntegers;
-};
-
-const squaredIntegers =squareList(realNumberArray);
-
-console.log(squaredIntegers);
-
-
-
-const increment = (function () {
-    return function increment(number, value = 1){
-        return number + value
+    function randomFraction() {
+        return Math.random();
     }
-}) ();
-console.log(increment(5, 2));
-console.log(increment(5));
+    console.log(randomFraction());
+
+    var randomNumberBetween0and19 = Math.floor(Math.random() * 20);
+
+    function randomWholeNum() {
+
+        return Math.floor(Math.random() * 10)
+
+    }
+    console.log(randomWholeNum());
+
+
+    function myRandomrange(myMin, myMax) {
+
+        return Math.floor(Math.random() * (myMax - myMin + 1)) + myMin;
+
+    }
+    console.log(myRandomrange(5, 20))
+
+
+    function convertToInteger(str) {
+
+        return parseInt(str, 2);
+
+    }
+    console.log(convertToInteger("10011"));
 
 
 
-const sum = (function() {
+    function checkequal(num) {
+        return num > 0 ? "positive" : num < 0 ? "negative" : "zero";
 
-    return function sum(...args) {
-        return args.reduce((a, b) => a + b,0 )    
+
+    }
+    console.log(checkequal(10));
+
+
+
+    function checkScope() {
+        "use strict";
+        let i = " function scope";
+        if (true) {
+            let i = "block scope";
+            console.log("Block scope i is:", i);
+
+        }
+        console.log("Funtion scope i is:", i);
+        return i
+    }
+    checkScope();
+
+
+
+
+    const s = [5, 7, 2]
+    function editInPlace() {
+        "use strcit";
+
+        s[0] = 2;
+        s[1] = 5;
+        s[2] = 7;
+
+    }
+    editInPlace();
+    console.log(s);
+
+
+
+
+    function freezeObj() {
+        "use strict";
+        const MATH_CONSTANTS = {
+            PI: 3.14
+        };
+        try {
+            MATH_CONSTANTS.PI = 99;
+        } catch (ex) {
+            console.log(ex);
+        }
+        return MATH_CONSTANTS.PI;
+    }
+    const PI = freezeObj();
+    console.log(PI)
+
+
+    var myConcat = (arr1, arr2) => arr1.concat(arr2);
+
+    console.log(myConcat([1, 2], [3, 4, 5]));
+
+
+
+
+    const realNumberArray = [4, 5.6, -9.8, 3.14, 42, 6, 8.34, -2]
+
+    const squareList = (arr) => {
+        const squaredIntegers = arr.filter(num => Number.isInteger(num) && num > 0).map(x => x * x);
+        return squaredIntegers;
     };
-})();
-console.log(sum(1, 9, 3));
+
+    const squaredIntegers = squareList(realNumberArray);
+
+    console.log(squaredIntegers);
+
+
+
+    const increment = (function () {
+        return function increment(number, value = 1) {
+            return number + value
+        }
+    })();
+    console.log(increment(5, 2));
+    console.log(increment(5));
+
+
+
+    const sum = (function () {
+
+        return function sum(...args) {
+            return args.reduce((a, b) => a + b, 0)
+        };
+    })();
+    console.log(sum(1, 9, 3));
 
 
 
 
-const arr1 = ["JAN", "FEB", "MAR", "APR", "MAY"];
-let arr2;
-(function() {
-    arr2 = [...arr1]; 
-    arr1[0] = "potato"
-})();
-console.log(arr2);
+    const arr1 = ["JAN", "FEB", "MAR", "APR", "MAY"];
+    let arr2;
+    (function () {
+        arr2 = [...arr1];
+        arr1[0] = "potato"
+    })();
+    console.log(arr2);
 
 
-var voxel = {x: 3.6, y: 7.4, z: 6.54 };
+    var voxel = { x: 3.6, y: 7.4, z: 6.54 };
 
-var x = voxel.x;
-var y = voxel.y;
-var z = voxel.z;
+    var x = voxel.x;
+    var y = voxel.y;
+    var z = voxel.z;
 
-const { x : h, y : k, z : l } = voxel;
-
-
-const AVG_TEMPERATURES = {
-    today: 77.5,
-    tomorrow: 79
-};
-
-function getTempOfTmrw(avgtemperatures){
-    "use strict";
-
-    const { tomorrow : tempOfTomorrow} = avgtemperatures;
-
-    return tempOfTomorrow;
-}
-
-console.log(getTempOfTmrw(AVG_TEMPERATURES));
-
-const LOCAL_FORECAST = {
-    today: {min: 72, max: 83},
-    tomorrow: { min: 73.3, max: 84.6 }
-};
-
-function getMaxOfTmrw(forecast) {
-    "use strict";
-
-    const { tomorrow :{max : maxOfTomorrow}} = forecast;
-    return maxOfTomorrow
-
-}
-console.log(getMaxOfTmrw(LOCAL_FORECAST));
+    const { x: h, y: k, z: l } = voxel;
 
 
-const [d, e, , o] = [1, 2, 3, 4, 5, 6]
-console.log(d, e, o);
-
-let n = 8, m = 6;
-(() =>{
-    "use strict";
-    [n, m] = [m, n]
-
-})();
-console.log(n);
-console.log(m);
-
-const source = [1,2,3,4,5,6,7,8,9,10];
-function removeFirstTwo(list) {
-
-    const [ , , ...Arr] = list;
-
-    return Arr;
-}
-const Arr = removeFirstTwo(source);
-console.log(Arr);
-console.log(source);
-
-
-
-const stats = {
-    max: 56.78,
-    standart_deviation:4.34,
-    medain: 34.54,
-    mode: 23.87,
-    min: -0.75,
-    average: 35.85
-};
-const half = (function(){
-    return function half({max, min}) {
-        return (max + min) / 2.0;
+    const AVG_TEMPERATURES = {
+        today: 77.5,
+        tomorrow: 79
     };
-})();
-console.log(stats);
-console.log(half(stats));
+
+    function getTempOfTmrw(avgtemperatures) {
+        "use strict";
+
+        const { tomorrow: tempOfTomorrow } = avgtemperatures;
+
+        return tempOfTomorrow;
+    }
+
+    console.log(getTempOfTmrw(AVG_TEMPERATURES));
+
+    const LOCAL_FORECAST = {
+        today: { min: 72, max: 83 },
+        tomorrow: { min: 73.3, max: 84.6 }
+    };
+
+    function getMaxOfTmrw(forecast) {
+        "use strict";
+
+        const { tomorrow: { max: maxOfTomorrow } } = forecast;
+        return maxOfTomorrow
+
+    }
+    console.log(getMaxOfTmrw(LOCAL_FORECAST));
 
 
-const person = {
-    name: "zodiac hasbro",
-    age: 56
-};
+    const [d, e, , o] = [1, 2, 3, 4, 5, 6]
+    console.log(d, e, o);
 
-const greeting = `Hello, my name is ${person.name}!
+    let n = 8, m = 6;
+    (() => {
+        "use strict";
+        [n, m] = [m, n]
+
+    })();
+    console.log(n);
+    console.log(m);
+
+    const source = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+    function removeFirstTwo(list) {
+
+        const [, , ...Arr] = list;
+
+        return Arr;
+    }
+    const Arr = removeFirstTwo(source);
+    console.log(Arr);
+    console.log(source);
+
+
+
+    const stats = {
+        max: 56.78,
+        standart_deviation: 4.34,
+        medain: 34.54,
+        mode: 23.87,
+        min: -0.75,
+        average: 35.85
+    };
+    const half = (function () {
+        return function half({ max, min }) {
+            return (max + min) / 2.0;
+        };
+    })();
+    console.log(stats);
+    console.log(half(stats));
+
+
+    const person = {
+        name: "zodiac hasbro",
+        age: 56
+    };
+
+    const greeting = `Hello, my name is ${person.name}!
 I am ${person.age} years old.`;
-console.log(greeting);
+    console.log(greeting);
 
-const result = {
-    success: ["max-length", "no-amd", "prefer-arrow-functions"],
-    failure: ["no-var", "var-on-top", "linebreak"],
-    skipped:["id-blacklist", "no-dup-keys"]
-};
-function makeList(arr) {
-    const ResultDisplayArray =null;
+    const result = {
+        success: ["max-length", "no-amd", "prefer-arrow-functions"],
+        failure: ["no-var", "var-on-top", "linebreak"],
+        skipped: ["id-blacklist", "no-dup-keys"]
+    };
+    function makeList(arr) {
+        const ResultDisplayArray = null;
 
-    return ResultDisplayArray;
+        return ResultDisplayArray;
 
-    const resultDisplayArray = makeLinst(result.failure);
-}
+        const resultDisplayArray = makeLinst(result.failure);
+
+    }
 
 </script>
