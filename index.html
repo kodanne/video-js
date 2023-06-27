@@ -521,12 +521,91 @@ I am ${person.age} years old.`;
         skipped: ["id-blacklist", "no-dup-keys"]
     };
     function makeList(arr) {
-        const ResultDisplayArray = null;
+        const ResultDisplayArray = [];
+        for(let i=0; i < arr.length;i++ ){
+            resultDisplayArray.push(`<li class="text-warning>${arr[i]}</li>`)
+        }
 
         return ResultDisplayArray;
 
         const resultDisplayArray = makeLinst(result.failure);
 
     }
+    console.log(resultDisplayArray)
 
+
+
+    const createPerson = (name, age, gender) => ({
+    name,
+    age,
+    gender
+})
+console.log(createPerson("zodiac hasbro", 56, "male"))
+
+
+
+const bicycle = {
+  gear: 2,
+  setGear(newGear) {
+    this.gear = newGear;
+  }
+};
+bicycle.setGear(3);
+console.log(bicycle.gear);
+
+
+class Vegetable{
+    constructor(name){
+        this.name = name
+    }
+}
+
+const carrot = new Vegetable('carrot');
+console.log(carrot.name); 
+
+
+
+
+class Thermostat {
+  constructor(temp){
+    this._temp = 5/9 * (temp - 32)
+  }
+  //getter
+  get temperature(){
+    return this._temp
+  }
+  //setter
+  set temperature(updatetemperature){
+     this._temp = updatetemperature
+  }
+}
+
+
+const thermos = new Thermostat(76); 
+let temp = thermos.temperature; 
+thermos.temperature = 26;
+temp = thermos.temperature; 
+
+import { capitalizeString} from "./string_function"
+const cap = capitalizeString ("hello")
+console.log(cap)
+
+
+const capitalizeString = string => {
+    return string.charAt(0).toUpperCase() + string.slice(1);
+
+}
+export {capitalizeString}
+export const foo = "bar";
+export const bar = "bar"
+
+
+import * as capitalizeStrings from "capitalize_string"
+
+export default function subtract(x, y) { return x - y}
+
+
+import subtract from "math_functions"
+
+subtract(7,4);
 </script>
